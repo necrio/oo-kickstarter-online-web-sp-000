@@ -37,7 +37,10 @@ def initialize(title)
   @backers = []
 end
 
-
+def add_backer(backer)
+  @backers << backer
+  project.backers << self
+end
 
 
 
